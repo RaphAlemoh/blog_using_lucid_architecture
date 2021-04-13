@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+use App\Http\Controllers\LinkController;
+
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::view('/dashboard', 'dashboard')->name('dashboard');
+    Route::view('/submit', 'submit');    
+    Route::post('/submit', [LinkController::class, 'add'])->name('add.link');
+});
+
+require __DIR__.'/auth.php';

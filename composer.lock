@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a16c3c541bd99241cab1c21ce8e83ac",
+    "content-hash": "3bc5482106f5a9b6dc72980c857b55d1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1343,6 +1343,65 @@
                 }
             ],
             "time": "2021-01-18T20:58:21+00:00"
+        },
+        {
+            "name": "lucidarch/lucid",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lucidarch/lucid.git",
+                "reference": "1b54f6ea8625129b927d729f737c70939427484f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lucidarch/lucid/zipball/1b54f6ea8625129b927d729f737c70939427484f",
+                "reference": "1b54f6ea8625129b927d729f737c70939427484f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "symfony/console": "*",
+                "symfony/filesystem": "*",
+                "symfony/finder": "*",
+                "symfony/process": "*"
+            },
+            "bin": [
+                "lucid"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lucid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abed Halawi",
+                    "email": "halawi.abed@gmail.com"
+                }
+            ],
+            "description": "An architecture for scalable software.",
+            "homepage": "https://lucidarch.dev",
+            "keywords": [
+                "architecture",
+                "laravel",
+                "lucid"
+            ],
+            "support": {
+                "issues": "https://github.com/lucidarch/lucid/issues",
+                "source": "https://github.com/lucidarch/lucid"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/mulkave",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-01-01T15:25:51+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2851,6 +2910,68 @@
                 }
             ],
             "time": "2020-09-07T11:33:47+00:00"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v5.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "8c86a82f51658188119e62cff0a050a12d09836f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/8c86a82f51658188119e62cff0a050a12d09836f",
+                "reference": "8c86a82f51658188119e62cff0a050a12d09836f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides basic utilities for the filesystem",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/filesystem/tree/v5.2.6"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-03-28T14:30:26+00:00"
         },
         {
             "name": "symfony/finder",
@@ -5279,6 +5400,62 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "laravel/breeze",
+            "version": "v1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "36f678dc65bdb09b5dbbb46051ab07d1a6f19962"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/36f678dc65bdb09b5dbbb46051ab07d1a6f19962",
+                "reference": "36f678dc65bdb09b5dbbb46051ab07d1a6f19962",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^8.0",
+                "illuminate/support": "^8.0",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Breeze\\BreezeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Breeze\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+            "keywords": [
+                "auth",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/breeze/issues",
+                "source": "https://github.com/laravel/breeze"
+            },
+            "time": "2021-03-23T17:01:27+00:00"
         },
         {
             "name": "laravel/sail",
